@@ -3882,7 +3882,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-resume {
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
 }
@@ -3960,7 +3960,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-    background-color: var(--color-gray-1);
+    background-color: var(--color-gray-12);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-5);
 }
