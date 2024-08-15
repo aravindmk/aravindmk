@@ -2555,20 +2555,20 @@ input[type="button"].btn--primary:focus {
 /* ------------------------------------------------------------------- 
  * ## skillbars
  * ------------------------------------------------------------------- */
-.skill-bars-fat {
+.skill-bars {
     list-style: none;
     margin: var(--vspace-2) 0 var(--vspace-1);
 }
 
-.skill-bars-fat li {
-    height: 5.2rem;
+.skill-bars li {
+    height: 0.7rem;
     background: transparent;
     margin-bottom: 5.2rem;
     padding: 0;
     position: relative;
 }
 
-.skill-bars-fat li strong {
+.skill-bars li strong {
     font-family: var(--font-1);
     font-weight: 600;
     color: var(--color-text-dark);
@@ -2581,99 +2581,99 @@ input[type="button"].btn--primary:focus {
     left: 0;
 }
 
-.skill-bars-fat li .progress {
+.skill-bars li .progress {
     background: var(--color-gray-3);
     position: relative;
-    height: 10%;
-    border-radius: 1px;
+    height: 100%;
+    border-radius: 3px;
     overflow: hidden;
     position: relative;
 }
 
-.skill-bars-fat li .progress::before {
+.skill-bars li .progress::before {
     content: "";
     display: block;
     height: 100%;
     background-color: var(--color-gray-18);
 }
 
-.skill-bars-fat li .percent5::before {
+.skill-bars li .percent5::before {
     width: 5%;
 }
 
-.skill-bars-fat li .percent10::before {
+.skill-bars li .percent10::before {
     width: 10%;
 }
 
-.skill-bars-fat li .percent15::before {
+.skill-bars li .percent15::before {
     width: 15%;
 }
 
-.skill-bars-fat li .percent20::before {
+.skill-bars li .percent20::before {
     width: 20%;
 }
 
-.skill-bars-fat li .percent25::before {
+.skill-bars li .percent25::before {
     width: 25%;
 }
 
-.skill-bars-fat li .percent30::before {
+.skill-bars li .percent30::before {
     width: 30%;
 }
 
-.skill-bars-fat li .percent35::before {
+.skill-bars li .percent35::before {
     width: 35%;
 }
 
-.skill-bars-fat li .percent40::before {
+.skill-bars li .percent40::before {
     width: 40%;
 }
 
-.skill-bars-fat li .percent45::before {
+.skill-bars li .percent45::before {
     width: 45%;
 }
 
-.skill-bars-fat li .percent50::before {
+.skill-bars li .percent50::before {
     width: 50%;
 }
 
-.skill-bars-fat li .percent55::before {
+.skill-bars li .percent55::before {
     width: 55%;
 }
 
-.skill-bars-fat li .percent60::before {
+.skill-bars li .percent60::before {
     width: 60%;
 }
 
-.skill-bars-fat li .percent65::before {
+.skill-bars li .percent65::before {
     width: 65%;
 }
 
-.skill-bars-fat li .percent70::before {
+.skill-bars li .percent70::before {
     width: 70%;
 }
 
-.skill-bars-fat li .percent75::before {
+.skill-bars li .percent75::before {
     width: 75%;
 }
 
-.skill-bars-fat li .percent80::before {
+.skill-bars li .percent80::before {
     width: 80%;
 }
 
-.skill-bars-fat li .percent85::before {
+.skill-bars li .percent85::before {
     width: 85%;
 }
 
-.skill-bars-fat li .percent90::before {
+.skill-bars li .percent90::before {
     width: 90%;
 }
 
-.skill-bars-fat li .percent95::before {
+.skill-bars li .percent95::before {
     width: 95%;
 }
 
-.skill-bars-fat li .percent100::before {
+.skill-bars li .percent100::before {
     width: 100%;
 }
 
@@ -3882,7 +3882,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-resume {
-    background-color: rgb(230, 230, 230);
+    background-color: white;
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
 }
@@ -3960,7 +3960,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-portfolio {
-    background-color: var(--color-gray-12);
+    background-color: var(--color-gray-1);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-5);
 }
@@ -3983,9 +3983,17 @@ input[type="button"].btn--primary:focus {
 
 .folio-item__thumb {
     display: block;
-    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(56, 24, 63);
     position: relative;
     overflow: hidden;
+}
+
+.folio-item__thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .folio-item__thumb::before {
@@ -4067,10 +4075,14 @@ input[type="button"].btn--primary:focus {
     line-height: 1.647;
     overflow-y: auto;
     position: relative;
+    max-height: 90vh;
 }
 
 .modal-popup img {
     margin-bottom: var(--vspace-0_5);
+    width: 680px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .modal-popup h5 {
