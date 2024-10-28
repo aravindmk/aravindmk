@@ -1225,7 +1225,6 @@ input[type="password"], textarea {
         -webkit-box-flex: 0;
         flex: 0 0 100%;
         max-width: 100%;
-        height: auto;
         margin-left: 0;
         margin-right: 0;
         padding: 0;
