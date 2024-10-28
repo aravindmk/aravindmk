@@ -734,9 +734,9 @@ input[type="password"], textarea {
 /* columns
  * -------------------------------------- */
 .column {
-    -ms-flex: 1 1 0%;
+    -ms-flex: 1 1 auto;
     -webkit-box-flex: 1;
-    flex: 1 1 0%;
+    flex: 1 1 auto;
     padding: 0 var(--gutter-lg);
 }
 
